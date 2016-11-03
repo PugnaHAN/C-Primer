@@ -1,0 +1,9 @@
+A C/C++ minor mode powered by libclang
+irony-mode is an Emacs minor-mode that aims at improving the editing experience for the C, C++ and Objective-C languages. It works by using a combination of an Emacs package and a C++ program (irony-server) that uses libclang.
+Features:
+Code completion:
+With Emacs' built-in completion-at-point-functions
+With company-mode's backend: company-irony
+With auto-complete' source: ac-irony
+Diagnostic reporting:
+With flycheck's checker: flycheck-irony
