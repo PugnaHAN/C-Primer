@@ -1,5 +1,5 @@
 CC = clang
-CXX = g++
+CXX = clang++
 
 CFLAGS = -std=c++11 -g -Iinclude
 CXXFLAGS = $(CFLAGS)
@@ -8,6 +8,8 @@ MAIN := main
 OBJS := main.o
 OBJS += Employee.o
 OBJS += HasPtr.o
+OBJS += StrVec.o
+OBJS += String.o
 OBJS += Message.o Folder.o
 
 vpath %.cpp src

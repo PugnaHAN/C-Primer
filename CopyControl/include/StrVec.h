@@ -14,7 +14,9 @@ class StrVec
 
 	void push_back(const std::string&);
 	size_t size() const {return first_free - elements;}
-	size_t capacity() const {return cap -elements;}
+	size_t capacity() const {return cap - elements;}
+	size_t reallocate() const {return cap - first_free;} 
+
 	std::string* begin() const {return elements;}
 	std::string* end() const {return first_free;}
 

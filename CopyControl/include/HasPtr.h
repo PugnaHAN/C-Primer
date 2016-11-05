@@ -16,6 +16,8 @@ class HasPtr
   private:
 	std::string *ps;
 	int i;
+	// The reason of using the pointer is to make sure all the copies has
+	// the same value of used counter.
 	std::size_t *use;
 };
 

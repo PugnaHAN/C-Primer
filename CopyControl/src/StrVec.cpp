@@ -2,18 +2,19 @@
 
 using namespace std;
 
-// allocator<string> StrVec::alloc =
+allocator<string> StrVec::alloc;
 
 StrVec::StrVec(initializer_list<string> l)
 {
 	auto len = l.size();
 	int count = 0;
 	while(len >> count)
-		++count;
-	elements = alloc.allocate(--count);
+		count++;
+	count = (1 << count);
+	elements = alloc.allocate(count);
 	first_free = elements + len;
-	cap = elements + (1 << count);
-	for(int i = 0; i < count; ++i)
+	cap = elements + count;
+	for(int i = 0; i < len; ++i)
 		alloc.construct((elements + i), *(l.begin() + i));
 }
 
@@ -33,7 +34,8 @@ void StrVec::free()
 {
 	if(elements)
 	{
-		for_each(first_free, elements, [](string& s){alloc.destroy(&s);});
+		cout << "free vecotr" << endl;
+		for_each(elements, first_free, [](string& s){alloc.destroy(&s);});
 		// for(auto p = first_free; p != elements;)
 		// 	alloc.destroy(--p);
 		alloc.deallocate(elements, cap - elements);
