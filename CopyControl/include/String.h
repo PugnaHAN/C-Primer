@@ -11,8 +11,10 @@ class String
 	String();
 	String(const char*);
 	String(const String&);
+	String(String&&);
 	~String();
 	String& operator=(const String&);
+	String& operator=(String&&);
 	String& operator+(const String&);
 
 	char* begin() const {return start;}

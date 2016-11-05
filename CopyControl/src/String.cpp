@@ -14,17 +14,25 @@ String::size_type String::strlen(const char* str)
 
 void String::free()
 {
-	--*use;
-	if(*use == 0)
+	if(use)
 	{
-		for(auto i = start; i != end_point; ++i)
-			alloc.destroy(i);
-				
-		alloc.destroy(end_point);
-		len = 0;
-		delete use;
-		use = nullptr;
-	}
+		--*use;
+		if(*use == 0)
+		{
+			for(auto i = start; i != end_point; ++i)
+			{
+			
+				alloc.destroy(i);
+			}
+		
+		
+			alloc.destroy(end_point);
+			len = 0;
+		
+			delete use;
+			use = nullptr;
+		}
+	}	
 }
 
 String::String()
@@ -53,11 +61,26 @@ String::String(const String& str) : start(str.start),
 									end_point(str.end_point),
 									use(str.use),
 									len(str.len)
-{++*use;}
+{
+	++*use;
+	cout << "copy constructor " << *use << endl;
+}
+
+String::String(String&& str): start(str.start), 
+							  end_point(str.end_point),
+							  use(str.use),
+							  len(str.len)
+{
+	++*use;
+	cout << "copy constructor right " << *use << endl;
+// 	str.use = nullptr;
+// 	str.start = str.end_point = nullptr;
+// 	str.len = 0;
+}
+
 
 String& String::operator=(const String& str)
-{
-	cout << "copy " << *use << endl;
+{	
 	++*str.use;
 	if(--*use == 0)
 	{
@@ -70,6 +93,26 @@ String& String::operator=(const String& str)
 	use = str.use;
 	++*use;
 	cout << "copy " << *use << endl;
+	return *this;
+}
+
+String& String::operator=(String&& str)
+{	
+	++*str.use;
+	if(--*use == 0)
+	{
+		delete use;
+		for(auto i = start; i != end_point; ++i)
+			delete i;
+	}
+	start = str.start;
+	end_point = str.end_point;
+	use = str.use;
+	++*use;
+	cout << "copy right " << *use << endl;
+	// str.use = nullptr;
+	// str.start = str.end_point = nullptr;
+	// str.len = 0;
 	return *this;
 }
 

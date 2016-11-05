@@ -8,6 +8,11 @@
 
 using namespace std;
 
+String get(const String& s)
+{
+	return s;
+}
+
 int main(int argc, char* argv[])
 {
 	/*
@@ -68,6 +73,7 @@ int main(int argc, char* argv[])
 	vector<String> strings;
 	strings.push_back(s1);
 	strings.push_back(s2);
+	strings.push_back(get(s1));
 
 	return 0;
 }

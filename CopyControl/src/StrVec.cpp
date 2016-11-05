@@ -42,7 +42,7 @@ void StrVec::free()
 	}
 }
 
-StrVec::StrVec(const StrVec &s)
+StrVec::StrVec(StrVec &s)
 {
 	auto newdata = alloc_n_copy(s.begin(), s.end());
 	elements = newdata.first;
@@ -60,6 +60,26 @@ StrVec& StrVec::operator=(const StrVec &rhs)
 	free();
 	elements = data.first;
 	first_free = cap = data.second;
+	return *this;
+}
+
+StrVec::StrVec(StrVec&& rhs) noexcept: elements(std::move(rhs.elements)),
+									   first_free(std::move(rhs.first_free)),
+									   cap(std::move(rhs.cap))
+{
+	rhs.elements = rhs.cap = rhs.first_free = nullptr;
+}
+
+StrVec& StrVec::operator=(StrVec&& rhs) noexcept
+{
+	if(this != &rhs)
+	{
+		free();
+		elements = rhs.elements;
+		first_free = rhs.first_free;
+		cap = rhs.cap;
+		rhs.elements = rhs.first_free = rhs.cap = nullptr;
+	}
 	return *this;
 }
 
