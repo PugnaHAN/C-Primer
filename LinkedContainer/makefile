@@ -1,5 +1,5 @@
 CC = gcc
-CXX = g++
+CXX = clang++
 
 CFLAGS = -std=c++11 -g -Wall -Iinclude
 CXXFLAGS = $(CFLAGS)
