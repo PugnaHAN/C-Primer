@@ -7,6 +7,7 @@ CXXFLAGS = $(CFLAGS)
 MAIN := main
 OBJS := main.o
 OBJS += Quote.o Bulk_quote.o
+OBJS += Basket.o
 OBJS += functions.o
 
 vpath %.cpp src

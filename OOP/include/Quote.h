@@ -13,7 +13,9 @@ public:
     virtual ~Quote() = default;
 
     virtual void debug(std::ostream&) const;
-
+    // 为了解决无法确定类型而导致数据被切的问题
+    virtual Quote* clone() const & {return new Quote(*this);}
+    virtual Quote* clone() && {return new Quote(std::move(*this));}
 private:
     std::string bookNo;
 
