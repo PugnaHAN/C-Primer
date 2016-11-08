@@ -2,7 +2,7 @@
 
 using namespace std;
 
-TextQuery::TextQuery(ifstream &file):contents(new vector<string>)
+TextQuery::TextQuery(ifstream &file) : contents(new vector<string>())
 {
 	string text;
 	while (getline(file, text))

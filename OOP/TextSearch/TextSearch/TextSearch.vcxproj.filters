@@ -22,6 +22,9 @@
     <Filter Include="头文件\interface">
       <UniqueIdentifier>{2a82b1c1-9eca-4c6c-9f01-58d595348f74}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Debug">
+      <UniqueIdentifier>{f01d822c-5917-41d1-b7b2-3f1a3be367ad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NotQuery.h">
@@ -59,6 +62,9 @@
     </ClInclude>
     <ClInclude Include="text_search.h">
       <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Template\Template\DebugDelete.h">
+      <Filter>头文件\Debug</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

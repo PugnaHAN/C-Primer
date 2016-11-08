@@ -146,6 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\Template\Template\DebugDelete.h" />
     <ClInclude Include="AndQuery.h" />
     <ClInclude Include="BinaryQuery.h" />
     <ClInclude Include="common.h" />
