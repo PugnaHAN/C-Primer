@@ -243,3 +243,9 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+# User defined
+*.o
+main
+Ch*
+AT
