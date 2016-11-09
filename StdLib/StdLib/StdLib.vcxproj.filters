@@ -15,36 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="functions.h">
+    <ClInclude Include="reg_functions.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="common.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Blob.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="BlobPtr.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="DebugDelete.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="TempTest.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="TemplateDecl.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="shared_ptr.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="reg_functions.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="TempTest.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

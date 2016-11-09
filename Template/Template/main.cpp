@@ -31,4 +31,15 @@ int main(int argc, char* argv[])
 	han::shared_ptr<string> ptr("hello");
 	auto ptr1 = ptr;
 	cout << *ptr << endl;
+
+	int i = 2; const int ci = i;
+	func(i);
+	// func(ci);
+	func(i * ci);
+	int j;
+	func(j = i); // int j -> Type = int&
+	int i1 = 0, i2 = 1; char c1 = 'a', c2 = 'b';
+	string s = "hello";
+	foo(i1, c1, i2, c2, s);
+	print(cout, i1, i2, c1, c2, s);
 }
