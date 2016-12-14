@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Adapter">
+      <UniqueIdentifier>{d704e63c-9b8f-45df-837a-643955b3dbe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Adapter">
+      <UniqueIdentifier>{ae921c17-49ef-4f95-9ab1-321ea67c40e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Common">
+      <UniqueIdentifier>{ee19a398-6ffc-4e12-b4fa-74f8b7c5369f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Common">
+      <UniqueIdentifier>{73e92f82-60ab-4027-bdd8-914f2ba1349e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Bridge">
+      <UniqueIdentifier>{97ae962f-9a7a-4515-8785-63d65aa67843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Composite">
+      <UniqueIdentifier>{59949120-15b9-4502-ac83-094e67926701}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Composite">
+      <UniqueIdentifier>{a241eeda-f457-4053-8766-c61951899b87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Decorator">
+      <UniqueIdentifier>{8bf841ce-e472-4046-bcfe-cbd81b7db73f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Decorator">
+      <UniqueIdentifier>{83796e99-cf94-47e6-bfdb-8b33a46041ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Facade">
+      <UniqueIdentifier>{83359ba6-582a-4f01-93ac-656bd0da81a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Facade">
+      <UniqueIdentifier>{ec789d5d-320a-4473-89b8-bab13925450e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Flyweight">
+      <UniqueIdentifier>{964ae28e-1112-44bf-aeca-cfcca86e3b79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Flyweight">
+      <UniqueIdentifier>{0359850a-55f6-4a90-b795-f4c8e776c195}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Proxy">
+      <UniqueIdentifier>{481be1e8-0d6b-4a1c-ae7d-a01cfca26351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Proxy">
+      <UniqueIdentifier>{e05dc095-afd2-470f-b0a8-a8f400597a21}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ExecuteInterface.h">
+      <Filter>头文件\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="ExecuteAdapter.h">
+      <Filter>头文件\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>头文件\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="Adapter.h">
+      <Filter>头文件\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>头文件\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeImp.h">
+      <Filter>头文件\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge.h">
+      <Filter>头文件\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Composite.h">
+      <Filter>头文件\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator.h">
+      <Filter>头文件\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Facade.h">
+      <Filter>头文件\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Flyweight.h">
+      <Filter>头文件\Flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy.h">
+      <Filter>头文件\Proxy</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Adpter.cpp">
+      <Filter>源文件\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="common.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Composite.cpp">
+      <Filter>源文件\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator.cpp">
+      <Filter>源文件\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Facade.cpp">
+      <Filter>源文件\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="Flyweight.cpp">
+      <Filter>源文件\Flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy.cpp">
+      <Filter>源文件\Proxy</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Composite.cd" />
+    <None Include="Decorator.cd" />
+    <None Include="Flyweight.cd" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Template">
+      <UniqueIdentifier>{24cd8733-b17f-4c0b-a9b6-fb0dbf46c3fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\RespChain">
+      <UniqueIdentifier>{d3c4cc48-afab-4d10-af0a-086a1381396b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\RespChain">
+      <UniqueIdentifier>{4bbcf6ef-8d3a-469b-8bf3-4ab6563057ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Command">
+      <UniqueIdentifier>{86592ef6-fab8-4cb1-99c1-cd5d1f4228ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Command">
+      <UniqueIdentifier>{a45d31fb-5bf7-498d-850e-0e7d87d8ede5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Interpreter">
+      <UniqueIdentifier>{e0c85f6b-752f-4c8a-a761-95db9530f630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Interpreter">
+      <UniqueIdentifier>{7f0c9301-41cd-4df3-b201-c21215707d1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Iterator">
+      <UniqueIdentifier>{931cb526-4112-4723-97e7-da62c3b1136e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Iterator">
+      <UniqueIdentifier>{36a18fc3-cef0-4fab-af0e-50b143ce6598}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Behavior.md">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Template.h">
+      <Filter>头文件\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RespChain.h">
+      <Filter>头文件\RespChain</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>头文件\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Interpreter.h">
+      <Filter>头文件\Interpreter</Filter>
+    </ClInclude>
+    <ClInclude Include="Iterator.h">
+      <Filter>头文件\Iterator</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RespChain.cpp">
+      <Filter>源文件\RespChain</Filter>
+    </ClCompile>
+    <ClCompile Include="common.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>源文件\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Interpreter.cpp">
+      <Filter>源文件\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="Iterator.cpp">
+      <Filter>源文件\Iterator</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
